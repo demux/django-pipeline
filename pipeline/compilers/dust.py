@@ -8,7 +8,6 @@ class DustCompiler(SubProcessCompiler):
     output_extension = 'js'
 
     def match_file(self, filename):
-        print filename
         return filename.endswith('.dust')
 
     def compile_file(self, infile, outfile, outdated=False, force=False):
