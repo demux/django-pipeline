@@ -56,6 +56,8 @@ PIPELINE_LIVE_SCRIPT_ARGUMENTS = getattr(settings, 'PIPELINE_LIVE_SCRIPT_ARGUMEN
 
 PIPELINE_DUST_BINARY = getattr(settings, 'PIPELINE_DUST_BINARY', '/usr/bin/env dustc')
 
+PIPELINE_EMBER_HANDLEBARS_BINARY = getattr(settings, 'PIPELINE_EMBER_HANDLEBARS_BINARY', '/usr/bin/env ember-precompile')
+
 PIPELINE_SASS_BINARY = getattr(settings, 'PIPELINE_SASS_BINARY', '/usr/bin/env sass')
 PIPELINE_SASS_ARGUMENTS = getattr(settings, 'PIPELINE_SASS_ARGUMENTS', '')
 
