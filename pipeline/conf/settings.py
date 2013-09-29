@@ -56,7 +56,13 @@ PIPELINE_LIVE_SCRIPT_ARGUMENTS = getattr(settings, 'PIPELINE_LIVE_SCRIPT_ARGUMEN
 
 PIPELINE_DUST_BINARY = getattr(settings, 'PIPELINE_DUST_BINARY', '/usr/bin/env dustc')
 
+PIPELINE_HANDLEBARS_BINARY = getattr(settings, 'PIPELINE_HANDLEBARS_BINARY', '/usr/bin/env handlebars')
+PIPELINE_HANDLEBARS_ARGUMENTS = getattr(settings, 'PIPELINE_HANDLEBARS_ARGUMENTS', 	'')
+
 PIPELINE_EMBER_HANDLEBARS_BINARY = getattr(settings, 'PIPELINE_EMBER_HANDLEBARS_BINARY', '/usr/bin/env ember-precompile')
+
+PIPELINE_SWIG_BINARY = getattr(settings, 'PIPELINE_SWIG_BINARY', '/usr/bin/env swig')
+PIPELINE_SWIG_ARGUMENTS = getattr(settings, 'PIPELINE_SWIG_ARGUMENTS', '--minify')
 
 PIPELINE_SASS_BINARY = getattr(settings, 'PIPELINE_SASS_BINARY', '/usr/bin/env sass')
 PIPELINE_SASS_ARGUMENTS = getattr(settings, 'PIPELINE_SASS_ARGUMENTS', '')
